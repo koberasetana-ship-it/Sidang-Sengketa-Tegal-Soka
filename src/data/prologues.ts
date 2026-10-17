@@ -6,7 +6,7 @@ const prologs = [
   "Waktunya membuktikan kemampuanmu!",
 ];
 
-export function getRandomProlog(index: number, person: string, allPersons: string[]): string {
+export function getRandomProlog(_index: number, person: string, _allPersons: string[]): string {
   const randomProlog = prologs[Math.floor(Math.random() * prologs.length)];
   return `${randomProlog} Pertanyaan untuk ${person}.`;
 }
