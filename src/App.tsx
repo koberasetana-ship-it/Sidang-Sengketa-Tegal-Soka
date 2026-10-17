@@ -14,7 +14,7 @@ import RewardButtons from '@/components/RewardButtons';
 import CountdownTimer from '@/components/CountdownTimer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Play, Pause, Square, SkipForward, SkipBack, Volume2, VolumeX, Shuffle, ShieldAlert, MessageSquareWarning, BookOpen, Gavel, Landmark, Dices, Swords } from 'lucide-react';
+import { Play, Pause, Square, SkipBack, Volume2, VolumeX, Shuffle, ShieldAlert, MessageSquareWarning, BookOpen, Gavel, Landmark, Dices, Swords } from 'lucide-react';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 import { getRandomProlog } from '@/data/prologues';
@@ -127,7 +127,7 @@ function buildDuelMixedQuestions(players: string[]): FlatQuestion[] {
     ...safeFlatten(keputusanSidangSets)
   ].filter(q => q && players.includes(q.person));
 
-  const byId: Record<number, FlatQuestion[]> = {};
+  const byId: Record<string, FlatQuestion[]> = {};
   for (const q of fromDuel) {
     if (q?.id == null) continue;
     if (!byId[q.id]) byId[q.id] = [];
