@@ -1,4 +1,3 @@
-import React from 'react';
 import type { FlatQuestion } from '../data/questions';
 
 interface QuestionCardProps {
@@ -25,8 +24,6 @@ const roleLabels: Record<string, string> = {
 
 export default function QuestionCard({
   question,
-  isActive,
-  isCurrent,
   showPerson
 }: QuestionCardProps) {
   const photo = personPhotos[question.person];

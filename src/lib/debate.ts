@@ -1,6 +1,6 @@
 import { duelSets } from '../data/duelMode';
 
-export type Role = 'duit semilyar' | 'urip kepenak' | 'Kamulyan jagad';
+export type Role = 'duit semilyar' | 'urip kepenak' | 'Kamulyan jagad' | 'instruksi';
 
 export interface Question {
   id: number;

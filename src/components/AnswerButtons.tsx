@@ -1,6 +1,5 @@
 export default function AnswerButtons({
-  onAnswer,
-  person
+  onAnswer
 }: {
   onAnswer: (n: 1 | 2) => void;
   person: string;
